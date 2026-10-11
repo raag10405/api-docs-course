@@ -26,6 +26,14 @@ Returns current weather conditions for a location. Status: 200 OK.
 | `current_weather_units.winddirection` | string | Unit of `current_weather.winddirection`. | ° |
 | `current_weather_units.is_day` | string | Always an empty string: `is_day` is a flag with no unit. | |
 | `current_weather_units.weathercode` | string | Code system used for `current_weather.weathercode`. | wmo code |
+| `current_weather` | object | Current conditions for the location. Present only when the request includes `current_weather=true`. Units for each field are given in `current_weather_units`. | |
+| `current_weather.time` | string | Timestamp the current conditions apply to, in ISO 8601 format, in the time zone given by `timezone` (GMT unless the `timezone` parameter is set). No offset suffix is included. | iso8601 |
+| `current_weather.interval` | string | Unit of `current_weather.interval`. | seconds |
+| `current_weather_units.temperature` | string | Unit of `current_weather.temperature`. | °C |
+| `current_weather_units.windspeed` | string | Unit of `current_weather.windspeed`. | km/h |
+| `current_weather_units.winddirection` | string | Unit of `current_weather.winddirection`. | ° |
+| `current_weather_units.is_day` | string | Always an empty string: `is_day` is a flag with no unit. | |
+| `current_weather_units.weathercode` | string | Code system used for `current_weather.weathercode`. | wmo code |
 
 ## Example response
 
