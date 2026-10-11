@@ -10,7 +10,7 @@ Returns current weather conditions for a location. Status: 200 OK.
 
 | Field | Type | Description | Example |
 |---|---|---|---|
-| `latitude` | number | Latitude of the grid cell actually used, which may differ slightly from the value sent | 52.512604 |
+| `latitude` | number | Latitude of the grid cell actually used, which may differ slightly from the value sent | 52.512604 | `longitude` | number | Longitude of the grid cell actually used, which may differ slightly from the value sent | 13.419517
 | `generationtime_ms` | number | Time the server took to generate the response, in milliseconds | 0.12 |
 | `utc_offset_seconds` | number | The difference in seconds between Coordinated Universal Time (UTC) and the local time, which defaults to GMT unless the timezone parameter is set | 0 |
 | `timezone` | string | the time zone used for all timestamps in the response; defaults to GMT unless the timezone parameter is set | GMT |
